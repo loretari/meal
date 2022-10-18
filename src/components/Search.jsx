@@ -20,7 +20,7 @@ const Search = () => {
     }
 
     const handleRandomMeal = () => {
-        setSearchTeam('')
+        setSearchTerm('')
         setText('')
         fetchRandomMeal()
     }
@@ -30,9 +30,9 @@ const Search = () => {
 
     return <header className = "search-container">
         <form onSubmit= {handleSubmit}>
-            <input type = "text" onChange={handleChange} value= {text} placeholder = 'type favorite meal' claaName = 'form-input'/>
-            <button type = "submit" claaName = 'btn'>Search</button>
-            <button type = "button" claaName = 'btn btn-hipster' onClick={ handleRandomMeal }>Surprise me!</button>
+            <input type = "text" onChange={handleChange} value= {text} placeholder = 'type favorite meal' className = 'form-input'/>
+            <button type = "submit" className = 'btn'>Search</button>
+            <button type = "button" className = 'btn btn-hipster' onClick={ handleRandomMeal }>Surprise me!</button>
         </form>
     </header>
 }
