@@ -7,6 +7,8 @@ const Search = () => {
     const { setSearchTerm, fetchRandomMeal } = useGlobalContext()
     const [text, setText] = useState('')
 
+    const {setSearchTerm, fetchRandomMeal } = useGlobalContext()
+
     const handleChange = (e) => {
         setText(e.target.value)
     }
@@ -14,6 +16,7 @@ const Search = () => {
         e.preventDefault()
         if (text) {
             setSearchTerm(text)
+
         }
     }
 
@@ -28,9 +31,7 @@ const Search = () => {
 
     return <header className = "search-container">
         <form onSubmit= {handleSubmit}>
-            <input type = "text" onChange={handleChange} value= {text} placeholder = 'type favorite meal' claaName = 'form-input'/>
-            <button type = "submit" claaName = 'btn'>Search</button>
-            <button type = "button" claaName = 'btn btn-hipster' onClick={handleRandomMeal}>Surprise me!</button>
+
         </form>
     </header>
 }
