@@ -17,6 +17,7 @@ const Search = () => {
         }
     }
 
+    
     const handleRandomMeal = () => {
         setSearchTerm('')
         setText('')
