@@ -9,7 +9,7 @@ export default function App() {
     return (
         <main>
             {/*Meals App*/}
-            {/*/!*  <Search/> *!/*/}
+              <Search/>
             {/*/!* <Favorites /> *!/*/}
 
             <Meals />
