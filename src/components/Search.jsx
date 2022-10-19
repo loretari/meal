@@ -7,7 +7,7 @@ const Search = () => {
     const { setSearchTerm, fetchRandomMeal } = useGlobalContext()
     const [text, setText] = useState('')
 
-    const {setSearchTerm, fetchRandomMeal } = useGlobalContext()
+
 
     const handleChange = (e) => {
         setText(e.target.value)
