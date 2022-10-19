@@ -3,7 +3,7 @@ import { useGlobalContext } from "../context";
 import {BsHandThumbsUp} from 'react-icons/bs';
 
 const Meals = () => {
-    const { meals, loading } = useGlobalContext()
+    const { meals, loading, selectMeal } = useGlobalContext()
 
     if (loading) {
         return <section className= "section">
